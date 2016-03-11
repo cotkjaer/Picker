@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PickerDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>8F7712B91C899BF700B6B218</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FB9ACDB1C91A23700005616</key>
 		<dict>
 			<key>primary</key>
 			<true/>

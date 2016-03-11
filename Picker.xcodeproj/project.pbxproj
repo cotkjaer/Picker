@@ -12,6 +12,30 @@
 		8F7712C01C899BF700B6B218 /* PickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7712BF1C899BF700B6B218 /* PickerTests.swift */; };
 		8F7712CB1C899C0700B6B218 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7712CA1C899C0700B6B218 /* Picker.swift */; };
 		8F7712CD1C899C4C00B6B218 /* CNContactPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7712CC1C899C4C00B6B218 /* CNContactPickerViewController.swift */; };
+		8FB9ACD51C91A08800005616 /* PickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACD41C91A08800005616 /* PickerDelegate.swift */; };
+		8FB9ACD71C91A14800005616 /* PickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACD61C91A14800005616 /* PickerDataSource.swift */; };
+		8FB9ACDF1C91A23700005616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACDE1C91A23700005616 /* AppDelegate.swift */; };
+		8FB9ACE11C91A23700005616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACE01C91A23700005616 /* ViewController.swift */; };
+		8FB9ACE41C91A23700005616 /* Text.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9ACE21C91A23700005616 /* Text.storyboard */; };
+		8FB9ACE71C91A23700005616 /* PickerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACE51C91A23700005616 /* PickerDemo.xcdatamodeld */; };
+		8FB9ACE91C91A23700005616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9ACE81C91A23700005616 /* Assets.xcassets */; };
+		8FB9ACEC1C91A23700005616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9ACEA1C91A23700005616 /* LaunchScreen.storyboard */; };
+		8FB9ACF21C91A4BC00005616 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9ACF11C91A4BC00005616 /* Cartfile */; };
+		8FB9ACF31C91A52000005616 /* Picker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7712B01C899BF700B6B218 /* Picker.framework */; };
+		8FB9ACF41C91A52000005616 /* Picker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7712B01C899BF700B6B218 /* Picker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FB9ACF91C91A53300005616 /* Collections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB9ACF81C91A53300005616 /* Collections.framework */; };
+		8FB9ACFA1C91A53300005616 /* Collections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB9ACF81C91A53300005616 /* Collections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FB9ACFC1C91C5EF00005616 /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACFB1C91C5EF00005616 /* PickerTableViewController.swift */; };
+		8FB9ACFE1C91CD1700005616 /* Mixed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9ACFD1C91CD1700005616 /* Mixed.storyboard */; };
+		8FB9AD001C91CD3A00005616 /* MixedPickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACFF1C91CD3A00005616 /* MixedPickerTableViewController.swift */; };
+		8FBCBFF21C92C4FE00D202C3 /* Collections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB9ACF81C91A53300005616 /* Collections.framework */; };
+		8FF104FE1C92F51E00A86025 /* PickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF104FD1C92F51E00A86025 /* PickerCollectionViewController.swift */; };
+		8FF105001C92F71900A86025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF104FF1C92F71900A86025 /* Main.storyboard */; };
+		8FF105021C92F74A00A86025 /* MainPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF105011C92F74A00A86025 /* MainPicker.swift */; };
+		8FF105041C92F99400A86025 /* Color.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF105031C92F99400A86025 /* Color.storyboard */; };
+		8FF105061C92F9A900A86025 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF105051C92F9A900A86025 /* ColorPicker.swift */; };
+		8FF105081C93000600A86025 /* Enum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF105071C93000600A86025 /* Enum.storyboard */; };
+		8FF1050A1C93007000A86025 /* EnumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF105091C93007000A86025 /* EnumPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +46,29 @@
 			remoteGlobalIDString = 8F7712AF1C899BF700B6B218;
 			remoteInfo = Picker;
 		};
+		8FB9ACF51C91A52000005616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F7712A71C899BF700B6B218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F7712AF1C899BF700B6B218;
+			remoteInfo = Picker;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FB9ACF71C91A52100005616 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FB9ACFA1C91A53300005616 /* Collections.framework in Embed Frameworks */,
+				8FB9ACF41C91A52000005616 /* Picker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8F7712B01C899BF700B6B218 /* Picker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Picker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +79,28 @@
 		8F7712C11C899BF700B6B218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F7712CA1C899C0700B6B218 /* Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		8F7712CC1C899C4C00B6B218 /* CNContactPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNContactPickerViewController.swift; sourceTree = "<group>"; };
+		8FB9ACD41C91A08800005616 /* PickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerDelegate.swift; sourceTree = "<group>"; };
+		8FB9ACD61C91A14800005616 /* PickerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerDataSource.swift; sourceTree = "<group>"; };
+		8FB9ACDC1C91A23700005616 /* PickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB9ACDE1C91A23700005616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FB9ACE01C91A23700005616 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FB9ACE31C91A23700005616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Text.storyboard; sourceTree = "<group>"; };
+		8FB9ACE61C91A23700005616 /* PickerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PickerDemo.xcdatamodel; sourceTree = "<group>"; };
+		8FB9ACE81C91A23700005616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FB9ACEB1C91A23700005616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FB9ACED1C91A23800005616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB9ACF11C91A4BC00005616 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		8FB9ACF81C91A53300005616 /* Collections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Collections.framework; path = Carthage/Build/iOS/Collections.framework; sourceTree = "<group>"; };
+		8FB9ACFB1C91C5EF00005616 /* PickerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTableViewController.swift; sourceTree = "<group>"; };
+		8FB9ACFD1C91CD1700005616 /* Mixed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mixed.storyboard; sourceTree = "<group>"; };
+		8FB9ACFF1C91CD3A00005616 /* MixedPickerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedPickerTableViewController.swift; sourceTree = "<group>"; };
+		8FF104FD1C92F51E00A86025 /* PickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCollectionViewController.swift; sourceTree = "<group>"; };
+		8FF104FF1C92F71900A86025 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8FF105011C92F74A00A86025 /* MainPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPicker.swift; sourceTree = "<group>"; };
+		8FF105031C92F99400A86025 /* Color.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Color.storyboard; sourceTree = "<group>"; };
+		8FF105051C92F9A900A86025 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		8FF105071C93000600A86025 /* Enum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Enum.storyboard; sourceTree = "<group>"; };
+		8FF105091C93007000A86025 /* EnumPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBCBFF21C92C4FE00D202C3 /* Collections.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,14 +120,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FB9ACD91C91A23700005616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB9ACF91C91A53300005616 /* Collections.framework in Frameworks */,
+				8FB9ACF31C91A52000005616 /* Picker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8F7712A61C899BF700B6B218 = {
 			isa = PBXGroup;
 			children = (
+				8FB9ACF81C91A53300005616 /* Collections.framework */,
+				8FB9ACF11C91A4BC00005616 /* Cartfile */,
 				8F7712B21C899BF700B6B218 /* Picker */,
 				8F7712BE1C899BF700B6B218 /* PickerTests */,
+				8FB9ACDD1C91A23700005616 /* PickerDemo */,
 				8F7712B11C899BF700B6B218 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +149,7 @@
 			children = (
 				8F7712B01C899BF700B6B218 /* Picker.framework */,
 				8F7712BA1C899BF700B6B218 /* PickerTests.xctest */,
+				8FB9ACDC1C91A23700005616 /* PickerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +159,10 @@
 			children = (
 				8F7712CE1C899C8500B6B218 /* Supporting Files */,
 				8F7712CA1C899C0700B6B218 /* Picker.swift */,
+				8FB9ACD61C91A14800005616 /* PickerDataSource.swift */,
+				8FB9ACD41C91A08800005616 /* PickerDelegate.swift */,
+				8FB9ACFB1C91C5EF00005616 /* PickerTableViewController.swift */,
+				8FF104FD1C92F51E00A86025 /* PickerCollectionViewController.swift */,
 				8F7712CC1C899C4C00B6B218 /* CNContactPickerViewController.swift */,
 			);
 			path = Picker;
@@ -98,6 +184,28 @@
 				8F7712B51C899BF700B6B218 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FB9ACDD1C91A23700005616 /* PickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9ACDE1C91A23700005616 /* AppDelegate.swift */,
+				8FF104FF1C92F71900A86025 /* Main.storyboard */,
+				8FF105011C92F74A00A86025 /* MainPicker.swift */,
+				8FB9ACFD1C91CD1700005616 /* Mixed.storyboard */,
+				8FB9ACFF1C91CD3A00005616 /* MixedPickerTableViewController.swift */,
+				8FB9ACE21C91A23700005616 /* Text.storyboard */,
+				8FB9ACE01C91A23700005616 /* ViewController.swift */,
+				8FF105031C92F99400A86025 /* Color.storyboard */,
+				8FF105051C92F9A900A86025 /* ColorPicker.swift */,
+				8FF105071C93000600A86025 /* Enum.storyboard */,
+				8FF105091C93007000A86025 /* EnumPicker.swift */,
+				8FB9ACE81C91A23700005616 /* Assets.xcassets */,
+				8FB9ACEA1C91A23700005616 /* LaunchScreen.storyboard */,
+				8FB9ACED1C91A23800005616 /* Info.plist */,
+				8FB9ACE51C91A23700005616 /* PickerDemo.xcdatamodeld */,
+			);
+			path = PickerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +258,25 @@
 			productReference = 8F7712BA1C899BF700B6B218 /* PickerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8FB9ACDB1C91A23700005616 /* PickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB9ACEE1C91A23800005616 /* Build configuration list for PBXNativeTarget "PickerDemo" */;
+			buildPhases = (
+				8FB9ACD81C91A23700005616 /* Sources */,
+				8FB9ACD91C91A23700005616 /* Frameworks */,
+				8FB9ACDA1C91A23700005616 /* Resources */,
+				8FB9ACF71C91A52100005616 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB9ACF61C91A52000005616 /* PBXTargetDependency */,
+			);
+			name = PickerDemo;
+			productName = PickerDemo;
+			productReference = 8FB9ACDC1C91A23700005616 /* PickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +293,9 @@
 					8F7712B91C899BF700B6B218 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					8FB9ACDB1C91A23700005616 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 8F7712AA1C899BF700B6B218 /* Build configuration list for PBXProject "Picker" */;
@@ -174,6 +304,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8F7712A61C899BF700B6B218;
 			productRefGroup = 8F7712B11C899BF700B6B218 /* Products */;
@@ -182,6 +313,7 @@
 			targets = (
 				8F7712AF1C899BF700B6B218 /* Picker */,
 				8F7712B91C899BF700B6B218 /* PickerTests */,
+				8FB9ACDB1C91A23700005616 /* PickerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB9ACF21C91A4BC00005616 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +334,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FB9ACDA1C91A23700005616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF105041C92F99400A86025 /* Color.storyboard in Resources */,
+				8FB9ACEC1C91A23700005616 /* LaunchScreen.storyboard in Resources */,
+				8FF105001C92F71900A86025 /* Main.storyboard in Resources */,
+				8FB9ACE91C91A23700005616 /* Assets.xcassets in Resources */,
+				8FF105081C93000600A86025 /* Enum.storyboard in Resources */,
+				8FB9ACFE1C91CD1700005616 /* Mixed.storyboard in Resources */,
+				8FB9ACE41C91A23700005616 /* Text.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -208,7 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB9ACD51C91A08800005616 /* PickerDelegate.swift in Sources */,
 				8F7712CD1C899C4C00B6B218 /* CNContactPickerViewController.swift in Sources */,
+				8FF104FE1C92F51E00A86025 /* PickerCollectionViewController.swift in Sources */,
+				8FB9ACD71C91A14800005616 /* PickerDataSource.swift in Sources */,
+				8FB9ACFC1C91C5EF00005616 /* PickerTableViewController.swift in Sources */,
 				8F7712CB1C899C0700B6B218 /* Picker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +372,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FB9ACD81C91A23700005616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB9ACE11C91A23700005616 /* ViewController.swift in Sources */,
+				8FF1050A1C93007000A86025 /* EnumPicker.swift in Sources */,
+				8FB9ACE71C91A23700005616 /* PickerDemo.xcdatamodeld in Sources */,
+				8FB9ACDF1C91A23700005616 /* AppDelegate.swift in Sources */,
+				8FF105021C92F74A00A86025 /* MainPicker.swift in Sources */,
+				8FB9AD001C91CD3A00005616 /* MixedPickerTableViewController.swift in Sources */,
+				8FF105061C92F9A900A86025 /* ColorPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -229,7 +394,31 @@
 			target = 8F7712AF1C899BF700B6B218 /* Picker */;
 			targetProxy = 8F7712BC1C899BF700B6B218 /* PBXContainerItemProxy */;
 		};
+		8FB9ACF61C91A52000005616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F7712AF1C899BF700B6B218 /* Picker */;
+			targetProxy = 8FB9ACF51C91A52000005616 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FB9ACE21C91A23700005616 /* Text.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB9ACE31C91A23700005616 /* Base */,
+			);
+			name = Text.storyboard;
+			sourceTree = "<group>";
+		};
+		8FB9ACEA1C91A23700005616 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB9ACEB1C91A23700005616 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8F7712C21C899BF700B6B218 /* Debug */ = {
@@ -329,9 +518,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Picker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.Picker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,9 +541,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Picker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.Picker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +575,38 @@
 			};
 			name = Release;
 		};
+		8FB9ACEF1C91A23800005616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.PickerDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FB9ACF01C91A23800005616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.PickerDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -397,6 +626,7 @@
 				8F7712C61C899BF700B6B218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F7712C71C899BF700B6B218 /* Build configuration list for PBXNativeTarget "PickerTests" */ = {
 			isa = XCConfigurationList;
@@ -405,8 +635,31 @@
 				8F7712C91C899BF700B6B218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB9ACEE1C91A23800005616 /* Build configuration list for PBXNativeTarget "PickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB9ACEF1C91A23800005616 /* Debug */,
+				8FB9ACF01C91A23800005616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8FB9ACE51C91A23700005616 /* PickerDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8FB9ACE61C91A23700005616 /* PickerDemo.xcdatamodel */,
+			);
+			currentVersion = 8FB9ACE61C91A23700005616 /* PickerDemo.xcdatamodel */;
+			path = PickerDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8F7712A71C899BF700B6B218 /* Project object */;
 }
