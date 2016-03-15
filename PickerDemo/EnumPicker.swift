@@ -22,7 +22,7 @@ class EnumPicker: UITableViewController, Picker
     
     var pickerDelegate: PickerDelegate?
     
-    let shapes: [[Shape]] =  [[.Circle, .Ellipse, .Triangle, .Square]]
+    let items: [[Shape]] =  [[.Circle, .Ellipse, .Triangle, .Square]]
     
     override func viewDidLoad()
     {
@@ -61,26 +61,26 @@ extension EnumPicker //: Picker
 {
     func numberOfSections() -> Int
     {
-        return shapes.count
+        return items.count
     }
     
     func numberOfItemsInSection(section: Int?) -> Int?
     {
-        return shapes.get(section)?.count
+        return items.get(section)?.count
     }
     
     func itemForIndexPath(path: NSIndexPath?) -> Item?
     {
-        return shapes.get(path?.section)?.get(path?.item)
+        return items.get(path?.section)?.get(path?.item)
     }
     
     func indexPathForItem(item: Item?) -> NSIndexPath?
     {
-        guard let text = item else { return nil }
+        guard let shape = item else { return nil }
         
-        for (section, items) in shapes.enumerate()
+        for (section, shapes) in items.enumerate()
         {
-            if let index = items.indexOf(text)
+            if let index = shapes.indexOf(shape)
             {
                 return NSIndexPath(forItem: index, inSection: section)
             }

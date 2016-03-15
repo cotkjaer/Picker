@@ -7,11 +7,12 @@
 //
 
 import UIKit
-import Collections
 
-public class PickerTableViewController: UITableViewController, Picker
+public class PickerTableViewController: UITableViewController, CellBasedPicker
 {
     public typealias Item = NSObject
+    
+    public typealias Cell = UITableViewCell
     
     public var pickedItem: NSObject?
     
@@ -21,36 +22,16 @@ public class PickerTableViewController: UITableViewController, Picker
     public var pickerDelegate: PickerDelegate?
 }
 
-// MARK: - Picker
+// MARK: - CellBasedPicker
 
 public extension PickerTableViewController
 {
-    public func numberOfSections() -> Int
+    public func cellForItem(item: Item, atIndexPath indexPath: NSIndexPath) -> Cell
     {
-        return items.count
+        return tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifierForItem(item, atIndexPath: indexPath), forIndexPath: indexPath)
     }
     
-    public func numberOfItemsInSection(section: Int?) -> Int?
-    {
-        return items.get(section)?.count
-    }
-    
-    public func itemForIndexPath(path: NSIndexPath?) -> Item?
-    {
-        return items.get(path?.section)?.get(path?.item)
-    }
-}
-
-// MARK: - Defaults
-
-public extension PickerTableViewController
-{
-    func cellReuseIdentifierForItem(item: Item, atIndexPath indexPath: NSIndexPath) -> String
-    {
-        return "Cell"
-    }
-    
-    func configureCell(cell: UITableViewCell, forItem item: Item, atIndexPath indexPath: NSIndexPath)
+    func configureCell(cell: Cell, forItem item: Item, atIndexPath indexPath: NSIndexPath)
     {
         cell.accessoryType = pickedItem == item ? .Checkmark : .None
 

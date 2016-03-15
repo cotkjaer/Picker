@@ -13,7 +13,6 @@
 		8F7712CB1C899C0700B6B218 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7712CA1C899C0700B6B218 /* Picker.swift */; };
 		8F7712CD1C899C4C00B6B218 /* CNContactPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7712CC1C899C4C00B6B218 /* CNContactPickerViewController.swift */; };
 		8FB9ACD51C91A08800005616 /* PickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACD41C91A08800005616 /* PickerDelegate.swift */; };
-		8FB9ACD71C91A14800005616 /* PickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACD61C91A14800005616 /* PickerDataSource.swift */; };
 		8FB9ACDF1C91A23700005616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACDE1C91A23700005616 /* AppDelegate.swift */; };
 		8FB9ACE11C91A23700005616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ACE01C91A23700005616 /* ViewController.swift */; };
 		8FB9ACE41C91A23700005616 /* Text.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9ACE21C91A23700005616 /* Text.storyboard */; };
@@ -36,6 +35,10 @@
 		8FF105061C92F9A900A86025 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF105051C92F9A900A86025 /* ColorPicker.swift */; };
 		8FF105081C93000600A86025 /* Enum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF105071C93000600A86025 /* Enum.storyboard */; };
 		8FF1050A1C93007000A86025 /* EnumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF105091C93007000A86025 /* EnumPicker.swift */; };
+		8FF1050C1C97FCB700A86025 /* SectionedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1050B1C97FCB700A86025 /* SectionedPicker.swift */; };
+		8FF1050E1C9802A200A86025 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1050D1C9802A200A86025 /* PickerViewController.swift */; };
+		8FF105101C9808A700A86025 /* Wheel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF1050F1C9808A700A86025 /* Wheel.storyboard */; };
+		8FF105121C9808CA00A86025 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF105111C9808CA00A86025 /* WheelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +83,6 @@
 		8F7712CA1C899C0700B6B218 /* Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		8F7712CC1C899C4C00B6B218 /* CNContactPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNContactPickerViewController.swift; sourceTree = "<group>"; };
 		8FB9ACD41C91A08800005616 /* PickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerDelegate.swift; sourceTree = "<group>"; };
-		8FB9ACD61C91A14800005616 /* PickerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerDataSource.swift; sourceTree = "<group>"; };
 		8FB9ACDC1C91A23700005616 /* PickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB9ACDE1C91A23700005616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB9ACE01C91A23700005616 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,10 @@
 		8FF105051C92F9A900A86025 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		8FF105071C93000600A86025 /* Enum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Enum.storyboard; sourceTree = "<group>"; };
 		8FF105091C93007000A86025 /* EnumPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumPicker.swift; sourceTree = "<group>"; };
+		8FF1050B1C97FCB700A86025 /* SectionedPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionedPicker.swift; sourceTree = "<group>"; };
+		8FF1050D1C9802A200A86025 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		8FF1050F1C9808A700A86025 /* Wheel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wheel.storyboard; sourceTree = "<group>"; };
+		8FF105111C9808CA00A86025 /* WheelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,10 +165,11 @@
 			children = (
 				8F7712CE1C899C8500B6B218 /* Supporting Files */,
 				8F7712CA1C899C0700B6B218 /* Picker.swift */,
-				8FB9ACD61C91A14800005616 /* PickerDataSource.swift */,
 				8FB9ACD41C91A08800005616 /* PickerDelegate.swift */,
+				8FF1050B1C97FCB700A86025 /* SectionedPicker.swift */,
 				8FB9ACFB1C91C5EF00005616 /* PickerTableViewController.swift */,
 				8FF104FD1C92F51E00A86025 /* PickerCollectionViewController.swift */,
+				8FF1050D1C9802A200A86025 /* PickerViewController.swift */,
 				8F7712CC1C899C4C00B6B218 /* CNContactPickerViewController.swift */,
 			);
 			path = Picker;
@@ -200,6 +207,8 @@
 				8FF105051C92F9A900A86025 /* ColorPicker.swift */,
 				8FF105071C93000600A86025 /* Enum.storyboard */,
 				8FF105091C93007000A86025 /* EnumPicker.swift */,
+				8FF1050F1C9808A700A86025 /* Wheel.storyboard */,
+				8FF105111C9808CA00A86025 /* WheelViewController.swift */,
 				8FB9ACE81C91A23700005616 /* Assets.xcassets */,
 				8FB9ACEA1C91A23700005616 /* LaunchScreen.storyboard */,
 				8FB9ACED1C91A23800005616 /* Info.plist */,
@@ -342,6 +351,7 @@
 				8FB9ACEC1C91A23700005616 /* LaunchScreen.storyboard in Resources */,
 				8FF105001C92F71900A86025 /* Main.storyboard in Resources */,
 				8FB9ACE91C91A23700005616 /* Assets.xcassets in Resources */,
+				8FF105101C9808A700A86025 /* Wheel.storyboard in Resources */,
 				8FF105081C93000600A86025 /* Enum.storyboard in Resources */,
 				8FB9ACFE1C91CD1700005616 /* Mixed.storyboard in Resources */,
 				8FB9ACE41C91A23700005616 /* Text.storyboard in Resources */,
@@ -357,9 +367,10 @@
 			files = (
 				8FB9ACD51C91A08800005616 /* PickerDelegate.swift in Sources */,
 				8F7712CD1C899C4C00B6B218 /* CNContactPickerViewController.swift in Sources */,
+				8FF1050C1C97FCB700A86025 /* SectionedPicker.swift in Sources */,
 				8FF104FE1C92F51E00A86025 /* PickerCollectionViewController.swift in Sources */,
-				8FB9ACD71C91A14800005616 /* PickerDataSource.swift in Sources */,
 				8FB9ACFC1C91C5EF00005616 /* PickerTableViewController.swift in Sources */,
+				8FF1050E1C9802A200A86025 /* PickerViewController.swift in Sources */,
 				8F7712CB1C899C0700B6B218 /* Picker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF105121C9808CA00A86025 /* WheelViewController.swift in Sources */,
 				8FB9ACE11C91A23700005616 /* ViewController.swift in Sources */,
 				8FF1050A1C93007000A86025 /* EnumPicker.swift in Sources */,
 				8FB9ACE71C91A23700005616 /* PickerDemo.xcdatamodeld in Sources */,

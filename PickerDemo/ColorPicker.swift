@@ -27,8 +27,6 @@ class ColorPicker: PickerCollectionViewController
     
     override func configureCell(cell: UICollectionViewCell, forItem item: Item, atIndexPath indexPath: NSIndexPath)
     {
-        super.configureCell(cell, forItem: item, atIndexPath: indexPath)
-        
         if let color = item as? UIColor
         {
             cell.backgroundColor = color

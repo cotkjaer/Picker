@@ -11,11 +11,13 @@ import Picker
 
 class MainPicker: PickerTableViewController
 {
+    @IBOutlet weak var anchorView: UIView!
+    
     override func viewDidLoad()
     {
         pickerDelegate = self
                 
-        items = [["Text", "Mixed", "Enum"], ["Color"]]
+        items = [["Text", "Mixed", "Enum"], ["Color"], ["Wheel"]]
         
         super.viewDidLoad()
     }
@@ -35,7 +37,7 @@ class MainPicker: PickerTableViewController
             return "Table"
         case 1:
             return "Collection"
-        case 3:
+        case 2:
             return "Wheel"
         default:
             return nil
@@ -68,6 +70,11 @@ extension MainPicker
 {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
+        if let cell = sender as? UITableViewCell
+        {
+            anchorView.frame = tableView.convertRect(cell.bounds, fromView: cell)
+        }
+        
         if let picker = segue.destinationViewController as? PickerCollectionViewController
         {
             picker.pickerDelegate = self

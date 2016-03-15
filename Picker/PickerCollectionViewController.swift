@@ -9,9 +9,11 @@
 import UIKit
 import Collections
 
-public class PickerCollectionViewController: UICollectionViewController, Picker
+public class PickerCollectionViewController: UICollectionViewController, CellBasedPicker
 {
     public typealias Item = NSObject
+    
+    public typealias Cell = UICollectionViewCell
     
     public var pickedItem: NSObject?
     
@@ -21,38 +23,18 @@ public class PickerCollectionViewController: UICollectionViewController, Picker
     public var pickerDelegate: PickerDelegate?
 }
 
-// MARK: - Picker
-
-public extension PickerCollectionViewController
-{
-    public func numberOfSections() -> Int
-    {
-        return items.count
-    }
-    
-    public func numberOfItemsInSection(section: Int?) -> Int?
-    {
-        return items.get(section)?.count
-    }
-    
-    public func itemForIndexPath(path: NSIndexPath?) -> Item?
-    {
-        return items.get(path?.section)?.get(path?.item)
-    }
-}
-
 // MARK: - Defaults
 
 public extension PickerCollectionViewController
 {
-    func cellReuseIdentifierForItem(item: Item, atIndexPath indexPath: NSIndexPath) -> String
+    public func cellForItem(item: Item, atIndexPath indexPath: NSIndexPath) -> Cell
     {
-        return "Cell"
+        return collectionView!.dequeueReusableCellWithReuseIdentifier(cellReuseIdentifierForItem(item, atIndexPath: indexPath), forIndexPath: indexPath)
     }
     
     func configureCell(cell: UICollectionViewCell, forItem item: Item, atIndexPath indexPath: NSIndexPath)
     {
-        debugPrint("override configureCell(cell: UICollectionViewCell, forItem item: Item, atIndexPath indexPath: NSIndexPath)")
+        fatalError("override configureCell(cell: UICollectionViewCell, forItem item: Item, atIndexPath indexPath: NSIndexPath)")
     }
 }
 
@@ -118,8 +100,15 @@ public extension PickerCollectionViewController
         
         pickedItem = itemForIndexPath(indexPath)
         
-        pickerDelegate?.picker(self, didPick: pickedItem)
         
-        collectionView.reloadItemsAtIndexPaths(reloadIndexPaths)
+        collectionView.performBatchUpdates({
+
+            collectionView.reloadItemsAtIndexPaths(reloadIndexPaths)
+
+            }) { (completed) -> Void in
+
+                self.pickerDelegate?.picker(self, didPick: self.pickedItem)
+        }
+        
     }
 }

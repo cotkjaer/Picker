@@ -13,6 +13,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="frF-7d-Rzz" userLabel="Anchor View">
+                            <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="htZ-ds-ExQ" style="IBUITableViewCellStyleDefault" id="0mD-ra-fBh">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -39,10 +44,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="YHi-iZ-PCi"/>
                     <connections>
+                        <outlet property="anchorView" destination="frF-7d-Rzz" id="zW3-bV-DlJ"/>
                         <segue destination="E0M-Ff-QV5" kind="show" identifier="Text" id="SFb-Yd-sbh"/>
                         <segue destination="GQZ-cv-JwN" kind="show" identifier="Mixed" id="5NY-1I-tHq"/>
                         <segue destination="Ih3-lD-oaR" kind="show" identifier="Color" id="ACk-dP-3RT"/>
                         <segue destination="VaD-kX-OXc" kind="show" identifier="Enum" id="Cji-zF-AAa"/>
+                        <segue destination="JhH-dp-2zy" kind="popoverPresentation" identifier="Wheel" popoverAnchorView="frF-7d-Rzz" id="eHu-Zo-J7G">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                        </segue>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRq-PR-cCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,6 +73,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1od-iG-Fnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="833" y="587"/>
+        </scene>
+        <!--Wheel-->
+        <scene sceneID="EHB-bk-3ez">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Wheel" id="JhH-dp-2zy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U40-tW-ZeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="654"/>
         </scene>
         <!--Color-->
         <scene sceneID="aZr-jL-VN6">

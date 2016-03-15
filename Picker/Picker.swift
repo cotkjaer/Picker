@@ -12,10 +12,10 @@ public protocol Picker
 {
     typealias Item : Equatable
     
+    var items : [[Item]] { get }
+
     var pickedItem: Item? { get set }
-    
-//    var items : [[Item]] { get }
-    
+        
     var pickerDelegate : PickerDelegate? { get set }
     
     /// return number of sections in picker

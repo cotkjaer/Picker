@@ -18,7 +18,7 @@ class ViewController: UITableViewController, Picker
     
     var pickerDelegate: PickerDelegate?
     
-    let texts = [["one", "two"], ["camel", "alpha", "Congo", "88 (crazy)"], ["Lorem ipsum"], [], ["5th", "bare bones"]]
+    let items = [["one", "two"], ["camel", "alpha", "Congo", "88 (crazy)"], ["Lorem ipsum"], [], ["5th", "bare bones"]]
     
     override func viewDidLoad()
     {
@@ -67,26 +67,26 @@ extension ViewController //: Picker
 {
     func numberOfSections() -> Int
     {
-        return texts.count
+        return items.count
     }
     
     func numberOfItemsInSection(section: Int?) -> Int?
     {
-        return texts.get(section)?.count
+        return items.get(section)?.count
     }
     
     func itemForIndexPath(path: NSIndexPath?) -> Item?
     {
-        return texts.get(path?.section)?.get(path?.item)
+        return items.get(path?.section)?.get(path?.item)
     }
     
     func indexPathForItem(item: Item?) -> NSIndexPath?
     {
         guard let text = item else { return nil }
         
-        for (section, items) in texts.enumerate()
+        for (section, texts) in items.enumerate()
         {
-            if let index = items.indexOf(text)
+            if let index = texts.indexOf(text)
             {
                 return NSIndexPath(forItem: index, inSection: section)
             }
